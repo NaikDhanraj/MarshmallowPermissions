@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dssp.marshmallowpermissions.SinglePermission">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Permissions"
+
+        android:onClick="readExternalStorage"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_success"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+        android:gravity="center"
+        android:text="Congragulations,All the permissions areg granted successfully"/>
+</RelativeLayout>
